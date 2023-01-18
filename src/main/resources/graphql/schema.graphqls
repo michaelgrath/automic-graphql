@@ -1,0 +1,15 @@
+type Query {
+    allStatus(id: ID, name: String): [Status]
+    jobById(id: ID): Job#
+}
+
+type Job {
+    id: ID
+    name: String
+    type: String
+}
+
+type Status {
+    id: ID
+    name: String
+}
